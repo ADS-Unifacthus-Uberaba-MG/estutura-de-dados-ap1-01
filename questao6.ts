@@ -13,11 +13,13 @@ const idades: number[] = [15, 22, 18, 30];
 // 1) Imprima quantos elementos existem no array "idades" (use .length)
 // TODO: escreva sua linha de código aqui
 
-
+console.log(idades.length);
 // 2) Imprima o último elemento do array "idades"
 //    (dica: o índice do último elemento é idades.length - 1)
 // TODO: escreva sua linha de código aqui
-
+console.log(idades[idades.length - 1]);
 
 // 3) Remova o último elemento do array usando pop() e imprima o array resultante
 // TODO: escreva sua linha de código aqui
+idades.pop();
+console.log(idades);
