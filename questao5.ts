@@ -9,6 +9,7 @@
 // se a saída no terminal bate com o esperado.
 
 const notas: number[] = [7, 9];
+//Alterado
 
 // 1) Adicione o número 8 ao final do array "notas"
 // TODO: escreva sua linha de código aqui
