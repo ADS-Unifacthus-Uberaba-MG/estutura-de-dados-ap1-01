@@ -12,11 +12,12 @@ const notas: number[] = [7, 9];
 
 // 1) Adicione o número 8 ao final do array "notas"
 // TODO: escreva sua linha de código aqui
-
+notas.push(8);
 
 // 2) Imprima o array "notas" completo no console
 // TODO: escreva sua linha de código aqui
-
+console.log(notas);
 
 // 3) Imprima apenas o primeiro elemento do array "notas"
 // TODO: escreva sua linha de código aqui
+console.log(notas[0]);
