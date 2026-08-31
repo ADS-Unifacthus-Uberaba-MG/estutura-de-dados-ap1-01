@@ -16,7 +16,18 @@ interface No<T> {
 function imprimirLista<T>(head: No<T> | null): void {
   // TODO: crie a variável "atual" apontando para o head
 
+
   // TODO: escreva o laço while que imprime cada valor e avança "atual"
+
+}
+
+function imprimirLista<T>(head: No<T> | null): void {
+   let atual = head;
+   while (atual !==null) {
+    console.log(atual.valor);
+    atual = atual.proximo;
+   }
+      
 }
 
 // ---------------------------------------------------------------

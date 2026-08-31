@@ -16,6 +16,16 @@ interface No<T> {
 function inserirNoInicio<T>(head: No<T> | null, valor: T): No<T> {
   // TODO: crie o novo nó, com "proximo" apontando para o head atual
 
+  function inserirNoInicio<T>(head: No<T> | null, valor:T): No<T> {
+    const novoNo: No<T> = {
+      valor : valor,
+      proximo : head
+    };
+
+    return novoNo;
+
+    }
+  }
   // TODO: retorne o novo nó como o novo head da lista
 }
 
@@ -27,7 +37,7 @@ lista = inserirNoInicio(lista, 30);
 lista = inserirNoInicio(lista, 20);
 lista = inserirNoInicio(lista, 10);
 
-let atual = lista;
+let atual: No<number> | null = lista;
 while (atual !== null) {
   console.log(atual.valor);
   atual = atual.proximo;
