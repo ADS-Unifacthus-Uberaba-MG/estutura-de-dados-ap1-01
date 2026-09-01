@@ -18,7 +18,18 @@ function inserirNoInicio<T>(head: No<T> | null, valor: T): No<T> {
 
   // TODO: retorne o novo nó como o novo head da lista
 }
+function inserirNoInicio<T>(
+    head: No<T> | null,
+    valor: T
+): No<T> {
 
+    const novoNo: No<T> = {
+        valor: valor,
+        proximo: head
+    };
+
+    return novoNo;
+}
 // ---------------------------------------------------------------
 // Não edite daqui pra baixo — este trecho testa a sua função.
 // ---------------------------------------------------------------
