@@ -14,9 +14,11 @@ interface No<T> {
 }
 
 function inserirNoInicio<T>(head: No<T> | null, valor: T): No<T> {
-  // TODO: crie o novo nó, com "proximo" apontando para o head atual
+  // crie o novo nó, com "proximo" apontando para o head atual
+  const novo: No<T> = { valor, proximo: head };
 
-  // TODO: retorne o novo nó como o novo head da lista
+  // retorne o novo nó como o novo head da lista
+  return novo;
 }
 
 // ---------------------------------------------------------------

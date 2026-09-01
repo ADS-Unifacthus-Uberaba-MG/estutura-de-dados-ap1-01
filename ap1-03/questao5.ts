@@ -14,14 +14,24 @@ interface No<T> {
 }
 
 function inserirNoFinal<T>(head: No<T> | null, valor: T): No<T> {
-  // TODO: crie o novo nó, com "proximo" apontando para null
+  // crie o novo nó, com "proximo" apontando para null
+  const novo: No<T> = { valor, proximo: null };
 
-  // TODO: se a lista estiver vazia (head === null), retorne o novo nó como head
+  // se a lista estiver vazia (head === null), retorne o novo nó como head
+  if (head === null) {
+    return novo;
+  }
 
-  // TODO: caso contrário, percorra a lista até o último nó (proximo === null)
-  //       e faça o "proximo" dele apontar para o novo nó
+  // caso contrário, percorra a lista até o último nó (proximo === null)
+  // e faça o "proximo" dele apontar para o novo nó
+  let atual = head;
+  while (atual.proximo !== null) {
+    atual = atual.proximo;
+  }
+  atual.proximo = novo;
 
-  // TODO: retorne o head original da lista
+  // retorne o head original da lista
+  return head;
 }
 
 // ---------------------------------------------------------------
