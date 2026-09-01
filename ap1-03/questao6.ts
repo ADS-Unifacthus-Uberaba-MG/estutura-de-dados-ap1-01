@@ -14,12 +14,20 @@ interface No<T> {
 }
 
 function buscarNaLista<T>(head: No<T> | null, valor: T): boolean {
-  // TODO: crie a variável "atual" apontando para o head
+  // crie a variável "atual" apontando para o head
+  let atual = head;
 
-  // TODO: escreva o laço while que percorre a lista:
-  //       se "atual.valor" for igual a "valor", retorne true
+  // escreva o laço while que percorre a lista:
+  // se "atual.valor" for igual a "valor", retorne true
+  while (atual !== null) {
+    if (atual.valor === valor) {
+      return true;
+    }
+    atual = atual.proximo;
+  }
 
-  // TODO: se o laço terminar sem encontrar, retorne false
+  // se o laço terminar sem encontrar, retorne false
+  return false;
 }
 
 // ---------------------------------------------------------------
