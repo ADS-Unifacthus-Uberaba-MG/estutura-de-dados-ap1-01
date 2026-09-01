@@ -27,7 +27,7 @@ lista = inserirNoInicio(lista, 30);
 lista = inserirNoInicio(lista, 20);
 lista = inserirNoInicio(lista, 10);
 
-let atual = lista;
+let atual: No<number> | null= lista;
 while (atual !== null) {
   console.log(atual.valor);
   atual = atual.proximo;
