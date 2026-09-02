@@ -24,6 +24,28 @@ function inserirNoFinal<T>(head: No<T> | null, valor: T): No<T> {
   // TODO: retorne o head original da lista
 }
 
+function inserirNoFinal<T>(head: No<T> | null, valor: T) No<T> {
+  const novoNo: No<T> = {
+    valor: valor,
+    proximo: null
+  };
+   
+   if (head === null) {
+    return novoNo;
+   }
+    
+  let atual = head;
+  
+
+  while (atual.proximo == null) {
+    atual = atual.proximo;
+  }
+
+  atual.proximo = novoNo;
+  
+  return head;
+}
+
 // ---------------------------------------------------------------
 // Não edite daqui pra baixo — este trecho testa a sua função.
 // ---------------------------------------------------------------
