@@ -22,6 +22,23 @@ function buscarNaLista<T>(head: No<T> | null, valor: T): boolean {
   // TODO: se o laço terminar sem encontrar, retorne false
 }
 
+function buscarNaLista<T>(head: No<T> | null, valor: T): boolean {
+  let atual = head;
+
+  while (atual !== null) {
+    if (atual.valor === valor) {
+      return true;
+    }
+
+    atual = atual.proximo;
+  }
+
+  return false;
+}
+
+
+
+
 // ---------------------------------------------------------------
 // Não edite daqui pra baixo — este trecho testa a sua função.
 // ---------------------------------------------------------------
